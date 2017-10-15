@@ -1,0 +1,148 @@
+.body{
+  padding:0px 30px;
+}
+
+.nav{
+  display: flex;
+  background-color:#e3e3e3;
+  height:60px;
+  position:fixed;
+  width:100%;
+  z-index: 2;
+}
+
+.icon{
+  flex:2;
+  margin: auto 5px;
+  font-size: 25px;
+}
+
+.links{
+  flex:1;
+  display: flex;
+  margin:auto;
+}
+
+.navLink{
+  flex:1;
+  border-left: 1px solid #fff;
+  padding: 5px;
+}
+
+.navLink a{
+  font-size:20px;
+  padding: 15px;
+
+}
+
+.navLink:hover{
+  background-color: #f3f3f3;
+  color:#00f;
+}
+
+label#hamburger{
+  display: none;
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+.imageBox{
+  padding: 0px 15px;
+}
+
+#image{
+  height:550px;
+  background-size: 1350px 550px;
+  background-image: url("http://geodavephotography.com/images/anonymous-wallpaper/37925898-anonymous-wallpaper.jpg");
+  background-position: top;
+  background-attachment: fixed;
+}
+
+#toggle {
+  display: none;
+}
+
+.buttons{
+  display: flex;
+}
+
+.boxes{
+  flex:1;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  margin:15px;
+  box-shadow:-4px 4px 4px #999;
+  padding: 5px;
+}
+
+.span{
+  flex:1;
+  text-align:center;
+  margin:5px 5px 15px 5px;
+}
+
+.button{
+  flex:1;
+  margin:auto;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  margin:15px;
+}
+
+.info h2{
+  flex:1;
+}
+
+.info p{
+  flex:4;
+  word-spacing: 8px;
+}
+
+.footer{
+  display: flex;
+  background-color:#e3e3e3;
+}
+
+.icon2{
+  flex:1;
+  margin: auto 5px;
+  font-size: 25px;
+}
+
+.footLinks{
+  flex:1;
+}
+
+.num{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.holder, .holder2{
+  flex:1;
+}
+
+.holder a, .holder2 a{
+  display:block;
+}
+
+@media only screen and (max-width:500px) and (min-width:320px){
+  .buttons{flex-direction:column;}
+}
+
+@media only screen and (max-width:600px) and (min-width:419px){
+  img{height:350px;}
+}
+
+@media only screen and (max-width:420px) and (min-width:320px){
+  img{height:250px;}
+  .links{display:none;}
+  .navLink{border: none;background-color: #e3e3e3;}
+  label#hamburger{display:block;}
+  #toggle:checked + .links{display:block;margin:0px;}
+}
